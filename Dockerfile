@@ -1,4 +1,4 @@
-FROM fluent/fluentd:v0.14
+FROM fluent/fluentd:v1.2
 
 COPY ./rootfs .
 
