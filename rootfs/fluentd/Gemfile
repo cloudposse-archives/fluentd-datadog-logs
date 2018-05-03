@@ -6,5 +6,5 @@ source "https://rubygems.org"
 
 gem "fluent-plugin-secure-forward"
 gem "fluent-plugin-record-reformer"
-gem "fluent-plugin-datadog-log"
+gem "fluent-plugin-dd"
 gem "fluent-plugin-kubernetes_metadata_filter"
