@@ -40,4 +40,4 @@ ENV FLUENTD_CONF="fluent.conf"
 #ENV LD_PRELOAD="/usr/lib/libjemalloc.so.2"
 
 # Run Fluentd
-CMD ["/fluentd/entrypoint.sh"]
+ENTRYPOINT "/fluentd/entrypoint.sh"
