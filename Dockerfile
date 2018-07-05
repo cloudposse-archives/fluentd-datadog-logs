@@ -1,4 +1,4 @@
-FROM fluent/fluentd:v1.2
+FROM fluent/fluentd:v1.2-debian
 
 COPY ./rootfs .
 
