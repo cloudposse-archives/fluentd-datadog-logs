@@ -14,8 +14,7 @@ ENV GEM_HOME /fluentd/vendor/bundle/ruby/2.4.0
 ENV FLUENTD_DISABLE_BUNDLER_INJECTION 1
 
 RUN set -ex \
-    && apk upgrade --no-cache \
-    && apk add --no-cache ruby-bundler \
+    && apk add --no-cache ruby-json ruby-bundler \
     && apk add --no-cache --virtual .build-deps \
         build-base \
         ruby-dev \
