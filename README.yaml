@@ -38,6 +38,12 @@ related:
   - name: "terraform-datadog-monitor"
     description: "Terraform module to provision Standard System Monitors (cpu, memory, swap, io, etc) in Datadog"
     url: "https://github.com/cloudposse/terraform-datadog-monitor"
+  - name: "fluentd-kubernetes"
+    description: "Helm chart to run fluentd on kubernetes."
+    url: "https://github.com/cloudposse/charts/tree/master/incubator/fluentd-kubernetes"
+  - name: "ansible-fluentd"
+    description: "Configures fluentd."
+    url: "https://github.com/cloudposse/ansible-fluentd"
 
 # Short description of this project
 description: |-
