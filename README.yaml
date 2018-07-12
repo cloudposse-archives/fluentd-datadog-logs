@@ -1,0 +1,66 @@
+---
+#
+# This is the canonical configuration for the `README.md`
+# Run `make readme` to rebuild the `README.md`
+#
+
+# Name of this project
+name: fluentd-datadog-logs
+
+# Logo for this project
+#logo: docs/logo.png
+
+# License of this project
+license: "APACHE2"
+
+# Canonical GitHub repo
+github_repo: cloudposse/fluentd-datadog-logs
+
+# Badges to display
+badges:
+  - name: "Build Status"
+    image: "https://travis-ci.org/cloudposse/fluentd-datadog-logs.svg?branch=master"
+    url: "https://travis-ci.org/cloudposse/fluentd-datadog-logs"
+  - name: "Latest Release"
+    image: "https://img.shields.io/github/release/cloudposse/fluentd-datadog-logs.svg"
+    url: "https://travis-ci.org/cloudposse/fluentd-datadog-logs/releases"
+  - name: "Slack Community"
+    image: "https://slack.cloudposse.com/badge.svg"
+    url: "https://slack.cloudposse.com"
+
+related:
+  - name: "fluentd-remote-syslog"
+    description: "Fluent Remote Syslog Forwarder"
+    url: "https://github.com/cloudposse/fluentd-remote-syslog"
+  - name: "terraform-aws-datadog-integration"
+    description: "Terraform Module for integration DataDog to AWS"
+    url: "https://github.com/cloudposse/terraform-aws-datadog-integration"
+  - name: "terraform-datadog-monitor"
+    description: "Terraform module to provision Standard System Monitors (cpu, memory, swap, io, etc) in Datadog"
+    url: "https://github.com/cloudposse/terraform-datadog-monitor"
+  - name: "fluentd-kubernetes"
+    description: "Helm chart to run fluentd on kubernetes."
+    url: "https://github.com/cloudposse/charts/tree/master/incubator/fluentd-kubernetes"
+  - name: "ansible-fluentd"
+    description: "Configures fluentd."
+    url: "https://github.com/cloudposse/ansible-fluentd"
+
+# Short description of this project
+description: |-
+  Container allow to forward logs to [datadog](https://datadoghq.com)
+
+# How to use this project
+usage: |-
+  * Mount logs from host machine into container
+    * `/var/log` -> `/var/log`
+    * `/var/lib/docker/` -> `/var/lib/docker/`
+  * Set datadog api key as `DATADOG_API_KEY` environment variable 
+
+  ```shell
+  docker run -d -v /var/log:/var/log -v /var/lib/docker:/var/lib/docker -e DATADOG_API_KEY=XXXXXXX   
+  ```
+
+# Contributors to this project
+contributors:
+  - name: "Igor Rodionov"
+    github: "goruha"
